@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premium Contractor Solution LLC — Transforming spaces with quality, style, and precision.</title>
+<meta name="description" content="Residential remodeling specialists serving the DMV. Complete remodeling, roofing, siding, decks, kitchens, bathrooms, painting, drywall, carpentry, flooring, and hospital cleaning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#0e2a3b;--cream:#f4f2ec;--ink:#1b2229;--muted:#6f7b86;--line:#e6e0d6}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+.container{width:min(1200px,92%);margin:0 auto}
+.header{position:sticky;top:0;z-index:60;background:var(--cream);border-bottom:1px solid var(--line)}
+.header .bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:18px 0}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{color:var(--ink);text-decoration:none;font-weight:600;letter-spacing:.3px}
+.nav a:hover{color:var(--brand)}
+.brand{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.brand .title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:.4px;color:var(--brand)}
+.brand .sub{font-size:11px;color:var(--muted);letter-spacing:.6px;text-transform:uppercase}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid var(--ink);text-decoration:none;font-weight:700}
+.btn.light{background:transparent;color:var(--ink)}
+.btn.light:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--brand)}
+.hero .slides{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+.slide{position:relative;opacity:0;transition:opacity .9s ease}
+.slide.active{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;filter:brightness(.6)}
+.slide::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,42,59,.35),rgba(14,42,59,.55))}
+.hero .inner{position:relative;z-index:2;padding:118px 0 96px}
+.hero h1{font-family:'Playfair Display',serif;font-size:58px;line-height:1.08;margin:0 0 12px;text-shadow:0 2px 0 rgba(0,0,0,.2)}
+.hero .cta{display:inline-block;margin-top:12px;padding:12px 18px;background:rgba(15,42,60,.9);border:1px solid rgba(255,255,255,.35);border-radius:8px;color:#fff;text-decoration:none}
+.section{padding:84px 0;background:var(--cream)}
+.section + .section{border-top:1px solid var(--line)}
+.h2{font-family:'Playfair Display',serif;font-size:32px;margin:0 0 18px;color:var(--brand);text-align:center}
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:10px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;text-align:center}
+.kpi .num{font-weight:800;font-size:38px;color:var(--brand)}
+.kpi .label{color:var(--muted)}
+.service-card img{width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:10px;border:1px solid var(--line)}
+.service-card h3{margin:0 0 6px;font-size:18px;color:var(--brand)}
+.gallery .item{border-radius:12px;overflow:hidden;border:1px solid var(--line);height:220px}
+.gallery .item img{width:100%;height:100%;object-fit:cover}
+.reel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.reel .review{min-width:340px;scroll-snap-align:start}
+.review{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.review .stars{color:#e6b400;font-size:18px}
+.footer{border-top:1px solid var(--line);background:#fff;padding:28px 0}
+.footer .row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.small{color:var(--muted);font-size:14px}
+@media(max-width:980px){
+  .grid-3{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:1fr 1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:46px}
+}
+@media(max-width:720px){
+  .header .bar{grid-template-columns:1fr}
+  .nav.left,.nav.right{justify-content:center}
+  .grid-3,.grid-4{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container bar">
+    <nav class="nav left">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+    <div class="brand">
+      <div class="title">PREMIUM CONTRACTOR</div>
+      <div class="sub">SOLUTION LLC</div>
+    </div>
+    <div class="nav right">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn light" href="tel:+17039820484">Call 703-982-0484</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="slides">
+    <!-- Izquierda: espacios residenciales terminados -->
+    <div class="slide left active"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop" alt="Remodeled living room"></div>
+    <div class="slide left"><img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2d95?q=80&w=1600&auto=format&fit=crop" alt="Modern kitchen remodel"></div>
+    <div class="slide left"><img src="https://images.unsplash.com/photo-1616486886892-7f9fcf423740?q=80&w=1600&auto=format&fit=crop" alt="Bathroom renovation"></div>
+    <!-- Derecha: manos en acción / exterior residencial -->
+    <div class="slide right active"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1600&auto=format&fit=crop" alt="Exterior at dusk"></div>
+    <div class="slide right"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop" alt="Hands installing shingles"></div>
+    <div class="slide right"><img src="https://images.unsplash.com/photo-1613977257593-6f3189a9a7cd?q=80&w=1600&auto=format&fit=crop" alt="Siding hands close up"></div>
+  </div>
+  <div class="container inner">
+    <h1>Transforming spaces with quality, style, and precision.</h1>
+    <a class="cta" href="#portfolio">View Our Projects</a>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="container">
+    <h2 class="h2">WHY CHOOSE US</h2>
+    <div class="kpis">
+      <div class="kpi"><div class="num" data-count="18">0</div><div class="label">Years of Experience</div></div>
+      <div class="kpi"><div class="num" data-count="250">0</div><div class="label">Completed Projects</div></div>
+      <div class="kpi"><div class="num" data-count="500">0</div><div class="label">Happy Clients</div></div>
+      <div class="kpi"><div class="num" data-count="20">0</div><div class="label">Team Members</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <h2 class="h2">OUR SERVICES</h2>
+    <div class="grid grid-3">
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop" alt="Remodeled space"><h3>Complete Remodeling</h3><div>Installation, planning & project management.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop" alt="Roofing hands"><h3>Roofing</h3><div>Installation, replacement, repairs, inspections.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1613977257593-6f3189a9a7cd?q=80&w=1600&auto=format&fit=crop" alt="Siding detail"><h3>Siding</h3><div>Vinyl, fiber cement (Hardie), wood.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop" alt="Deck boards"><h3>Decks</h3><div>Custom decks, porches & patios.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1600585154340-1e4b3f3f0c12?q=80&w=1600&auto=format&fit=crop" alt="Bathroom finished"><h3>Bathrooms</h3><div>Full renovations, tiling, fixtures.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1600&auto=format&fit=crop" alt="Flooring hands"><h3>Flooring</h3><div>Hardwood, LVP/LVT, tile, laminate, epoxy.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1600&auto=format&fit=crop" alt="Kitchen remodel"><h3>Kitchens</h3><div>Cabinetry, countertops, lighting.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1556909188-16f2f0c1c9c1?q=80&w=1600&auto=format&fit=crop" alt="Carpentry hands"><h3>Masonry & Carpentry</h3><div>Fine & rough carpentry, stone/brick.</div></div>
+      <div class="card service-card"><img src="https://images.unsplash.com/photo-1586266317406-ec6bb3b06893?q=80&w=1600&auto=format&fit=crop" alt="Hospital cleaning corridor"><h3>Hospital Cleaning</h3><div>Healthcare-grade cleaning & disinfection.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <div class="container">
+    <h2 class="h2">FEATURED PROJECTS</h2>
+    <div class="grid grid-4 gallery">
+      <div class="item"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop" alt="Living room finished"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1600&auto=format&fit=crop" alt="Tile backsplash hands"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1600&auto=format&fit=crop" alt="Hardwood install hands"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1600&auto=format&fit=crop" alt="Exterior at dusk"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop" alt="Roofing hands"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1613977257593-6f3189a9a7cd?q=80&w=1600&auto=format&fit=crop" alt="Siding install"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop" alt="Deck boards"></div>
+      <div class="item"><img src="https://images.unsplash.com/photo-1600585154340-1e4b3f3f0c12?q=80&w=1600&auto=format&fit=crop" alt="Bathroom finished"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <h2 class="h2">WHAT CLIENTS SAY</h2>
+    <div class="reel">
+      <div class="review"><div class="stars">★★★★★</div><strong>Michael A.</strong><br>Kitchen remodel completed beautifully. Clean work and on schedule.</div>
+      <div class="review"><div class="stars">★★★★★</div><strong>Jessica R.</strong><br>Roof & siding upgrade — the house looks brand new. Highly recommend.</div>
+      <div class="review"><div class="stars">★★★★★</div><strong>David P.</strong><br>Basement finishing and flooring: excellent detail and communication.</div>
+      <div class="review"><div class="stars">★★★★★</div><strong>Elena M.</strong><br>Bathroom renovation was flawless; materials and workmanship are top-notch.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="container row">
+    <div class="brand" style="gap:8px;flex-direction:row;align-items:center">
+      <div class="title" style="text-align:left">Premium Contractor Solution LLC</div>
+      <div class="small">1466 N Beauregard St, Alexandria, VA 22311 • Mon–Fri 8:00 am – 5:00 pm</div>
+    </div>
+    <div class="small">Phone: <a href="tel:+17039820484">703-982-0484</a> • Email: <a href="mailto:info@premiumcontractorsolutionllc.com">info@premiumcontractorsolutionllc.com</a><br>© <span id="y"></span> Premium Contractor Solution LLC</div>
+  </div>
+</footer>
+
+<script>
+function animateCount(el, to, duration=1800){
+  const start = 0; const t0 = performance.now();
+  function tick(now){
+    const p=Math.min((now-t0)/duration,1);
+    el.textContent = Math.floor(start+(to-start)*p).toLocaleString();
+    if(p<1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.querySelectorAll('[data-count]').forEach(el=>animateCount(el, parseInt(el.dataset.count||'0')));
+  const leftSlides = Array.from(document.querySelectorAll('.slide.left'));
+  const rightSlides = Array.from(document.querySelectorAll('.slide.right'));
+  let i=0; function show(idx){
+    leftSlides.forEach((s,k)=>s.classList.toggle('active', k===idx%leftSlides.length));
+    rightSlides.forEach((s,k)=>s.classList.toggle('active', k===idx%rightSlides.length));
+  }
+  show(0); setInterval(()=>{ i++; show(i); }, 4000);
+});
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
